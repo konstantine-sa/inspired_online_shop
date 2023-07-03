@@ -13,20 +13,20 @@ export const Footer = () => {
         <ul className={s.categoryList}>
           <ul className={cn(s.categorySublist)}>
             <p className={s.categorySubtitle}>Frauen</p>
-            <li>BHs</li>
-            <li>Unterhosen</li>
-            <li>Socken</li>
-            <li>Bademäntel</li>
-            <li>Thermowäsche</li>
-            <li>Pyjamas</li>
+            <li className={s.link}>BHs</li>
+            <li className={s.link}>Unterhosen</li>
+            <li className={s.link}>Socken</li>
+            <li className={s.link}>Bademäntel</li>
+            <li className={s.link}>Thermowäsche</li>
+            <li className={s.link}>Pyjamas</li>
           </ul>
 
           <ul className={cn(s.categorySublist)}>
             <p className={s.categorySubtitle}>Männer</p>
-            <li>Unterhosen</li>
-            <li>Socken</li>
-            <li>Bademäntel</li>
-            <li>Thermowäsche</li>
+            <li className={s.link}>Unterhosen</li>
+            <li className={s.link}>Socken</li>
+            <li className={s.link}>Bademäntel</li>
+            <li className={s.link}>Thermowäsche</li>
           </ul>
         </ul>
       </div>
@@ -60,8 +60,12 @@ export const Footer = () => {
       </div>
 
       <div className={s.contacts}>
-        <a href="mailto: Inspired@gmail.com">Inspired@gmail.com</a>
-        <a href="tel:+49151222111333">+49 151 222 111 333</a>
+        <a className={s.link} href="mailto: Inspired@gmail.com">
+          Inspired@gmail.com
+        </a>
+        <a className={s.link} href="tel:+49151222111333">
+          +49 151 222 111 333
+        </a>
       </div>
 
       <div className={s.copyright}>
