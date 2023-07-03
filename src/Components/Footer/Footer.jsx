@@ -59,9 +59,21 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <div className={s.contacts}>Inspired@gmail.com</div>
-      <div className={s.copyright}>copyright</div>
-      <div className={s.development}>development</div>
+      <div className={s.contacts}>
+        <a href="mailto: Inspired@gmail.com">Inspired@gmail.com</a>
+        <a href="tel:+49151222111333">+49 151 222 111 333</a>
+      </div>
+
+      <div className={s.copyright}>
+        <p>© INSPIRED, 2023</p>
+      </div>
+
+      <div className={s.development}>
+        <div className={s.developmentList}>
+          <a>Designer: Anastasia Ilina</a>
+          <a>Developer: Konstantin Savchenko</a>
+        </div>
+      </div>
     </Container>
   );
 };
