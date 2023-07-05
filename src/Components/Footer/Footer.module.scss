@@ -121,6 +121,18 @@
   font-size: 18px;
   line-height: 22px;
 
+  &Phone {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
   @media (max-width: 768px) {
     gap: 21px;
     font-size: 14px;
@@ -165,6 +177,8 @@
 
   &Link {
     width: 30px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
   }
 
   &LinkFB:hover {
@@ -179,7 +193,7 @@
 
   &LinkTwt:hover {
     filter: invert(44%) sepia(93%) saturate(812%) hue-rotate(173deg)
-      brightness(96%) contrast(91%);
+      brightness(91%) contrast(91%);
   }
 }
 
